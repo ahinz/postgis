@@ -27,6 +27,7 @@ SQL_OBJS=postgis.sql legacy.sql legacy_minimal.sql
 # PostgreSQL objects
 PG_OBJS= \
 	postgis_module.o \
+	spgist.o \
 	lwgeom_accum.o \
 	lwgeom_spheroid.o \
 	lwgeom_ogc.o \
