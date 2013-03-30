@@ -1031,6 +1031,7 @@ sub prepare_spatial
 
 	# Load postgis.sql into the database
 	load_sql_file("${STAGED_SCRIPTS_DIR}/postgis.sql", 1);
+        load_sql_file("/usr/local/geo/postgis/postgis/pg2.sql", 1);
 	load_sql_file("${STAGED_SCRIPTS_DIR}/postgis_comments.sql", 0);
 	
 	if ( $OPT_WITH_TOPO )
